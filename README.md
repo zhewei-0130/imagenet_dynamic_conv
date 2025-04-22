@@ -18,10 +18,13 @@ This repository contains the implementation for a dynamic convolution module tha
 
 ```bash
 # Training dynamic model
-python train.py --channels RGB
+python train.py 
 
 # Testing dynamic model
 python test.py --checkpoint logs/your_model.pth
+
+#Train baseline model
+python train_baseline.py
 
 # Testing baseline model
 python test_baseline.py --checkpoint logs_baseline/baseline_model.pth
